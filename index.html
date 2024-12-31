@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="nav">
+                <h1>Flash Cards</h1>
+                <div>
+                    <button onclick="showCreateCardBox()">New Card</button>
+                    <button onclick="delFlashCard()">Del Card</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <!-- Creation box for new flashcards -->
+        <div class="create-box" style="display:none;">
+            <h1 style="text-align:center; color:black;">Flash Cards Box</h1>
+            <label for="question">Question</label>
+            <textarea id="question"></textarea>
+            <br>
+            <label for="answer">Answer</label>
+            <textarea id="answer"></textarea>
+            <div>
+                <button onclick="addFlashCards()">Save</button>
+                <button onclick="hideCreateBox()">Close</button>
+            </div>
+        </div>
+        <!-- Container for displaying flashcards -->
+        <div class="flash-Cards"></div>
+    </div>
+    <script src="flashCard.js"></script>
+</body>
+
+</html>
